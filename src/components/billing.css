@@ -1,0 +1,21 @@
+/* Billing.css */
+.print-container {
+  padding: 20px;
+}
+
+.invoice-page {
+  page-break-after: always;
+  margin-bottom: 40px;
+}
+
+.signature-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

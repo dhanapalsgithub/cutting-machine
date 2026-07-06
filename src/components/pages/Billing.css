@@ -1,0 +1,51 @@
+/* Billing.css */
+
+/* திரையில் பார்க்கும்போது இன்வாய்ஸ் பிரதிகள் தெரியாது */
+.print-container {
+  display: none;
+}
+
+/* பிரிண்ட் எடுக்கும்போது மட்டும் இன்வாய்ஸ் பிரதிகள் தெரியும் */
+@media print {
+  .no-print { display: none !important; }
+  
+  .print-container {
+    display: block !important;
+  }
+
+  .invoice-page {
+    page-break-after: always;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+}
+
+/* UI/Screen ஸ்டைல்கள் */
+.invoice-page {
+  margin-bottom: 40px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.signature-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.invoice-table th, .invoice-table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+.data-grid-container {
+  height: 400px;
+  width: 100%;
+}
